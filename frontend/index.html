@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Chaos</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="game-header">
+        <h1>Project Chaos</h1>
+        <p class="subtitle">Online Multiplayer Game</p>
+      </header>
+
+      <main class="game-main">
+        <section id="lobby" class="screen active">
+          <h2>Lobby</h2>
+          <div class="form-group">
+            <label for="room-id">Room ID</label>
+            <input id="room-id" type="text" placeholder="Enter a room name..." maxlength="20" />
+          </div>
+          <button id="join-btn" class="btn btn-primary">Join Room</button>
+          <p id="status" class="status-msg"></p>
+        </section>
+
+        <section id="game-room" class="screen">
+          <h2>Room: <span id="room-name"></span></h2>
+          <p>Players: <span id="player-count">0</span></p>
+          <p>Status: <span id="game-state">waiting</span></p>
+          <canvas id="game-canvas" width="640" height="480"></canvas>
+          <button id="leave-btn" class="btn btn-secondary">Leave Room</button>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
