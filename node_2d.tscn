@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://l71v7adstx4y"]
+
+[ext_resource type="Script" uid="uid://wk0vnckhfqbp" path="res://backend/player.gd" id="1_wtcfe"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_0e48y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wtcfe"]
+size = Vector2(119.5, 124)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_wtcfe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+resource_local_to_scene = true
+custom_solver_bias = 0.13
+size = Vector2(1402, 213)
+
+[node name="Node2D" type="Node2D" unique_id=59653220]
+position = Vector2(918, 184)
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1623551773]
+position = Vector2(-771, -216)
+script = ExtResource("1_wtcfe")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1259751006]
+position = Vector2(97, 106.00001)
+rotation = 3.1415927
+scale = Vector2(118.99999, -123.5)
+texture = SubResource("AnimatedTexture_0e48y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=829179046]
+position = Vector2(97, 106)
+shape = SubResource("RectangleShape2D_wtcfe")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=628166358]
+position = Vector2(-493, 34)
+physics_material_override = SubResource("PhysicsMaterial_wtcfe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=255257828]
+position = Vector2(41, 98)
+shape = SubResource("RectangleShape2D_0e48y")
+debug_color = Color(0.92041546, 0.17519557, 0.55336773, 0.41960785)
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=364404257]
+offset_left = -420.0
+offset_right = 80.0
+offset_bottom = 100.0
