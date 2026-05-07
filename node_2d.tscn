@@ -13,13 +13,16 @@ size = Vector2(119.5, 124)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
 resource_local_to_scene = true
 custom_solver_bias = 0.13
-size = Vector2(2720, 193.5)
+size = Vector2(2256, 193.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_epypp"]
+size = Vector2(319.5, 192)
 
 [node name="Node2D" type="Node2D" unique_id=59653220]
 position = Vector2(918, 184)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=815612542]
-position = Vector2(-690.5, -281)
+position = Vector2(-943, -274)
 scale = Vector2(4.5625, 2.7257142)
 texture = ExtResource("1_0e48y")
 
@@ -55,3 +58,11 @@ visible = false
 offset_left = -1491.0
 offset_right = 682.0
 offset_bottom = 100.0
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=104511503]
+position = Vector2(533, -1040)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=50107407]
+visible = false
+position = Vector2(-792.75, 989)
+shape = SubResource("RectangleShape2D_epypp")
