@@ -1,11 +1,14 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1778102499
+::res://::1778149764
 docker-compose.yml::TextFile::-1::1777744515::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::5397390482519907160::1777744280::1777744287::1::::<><><>0<>0<>d9040442a5d1467e15a022bda7e79823<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+mario png.jpg::CompressedTexture2D::1779351213261035062::1778149687::1778149687::1::::<><><>0<>0<>3ca5e18d205011f833b568b103fa5229<>res://.godot/imported/mario png.jpg-038d9575d6f87d6984360e25987dbf65.ctex::
+node_2d.tscn::PackedScene::839755192540539238::1778149488::0::1::::<><><>0<>0<><>::uid://wk0vnckhfqbp::::res://backend/player.gd
 README.md::TextFile::-1::1777744515::0::1::::<><><>0<>0<><>::
-::res://backend/::1777744515
+::res://backend/::1778105236
 package-lock.json::JSON::-1::1777744515::0::1::::<><><>0<>0<><>::
 package.json::JSON::-1::1777744515::0::1::::<><><>0<>0<><>::
+player.gd::GDScript::1566354450425558985::1778105236::0::1::::<>CharacterBody2D<><>0<>0<><>::
 ::res://backend/src/::1777744515
 ::res://backend/src/config/::1777744515
 ::res://backend/src/game/::1777744515
