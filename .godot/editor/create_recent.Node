@@ -1,21 +1,14 @@
-<<<<<<< HEAD
-Sprite2D
-=======
-<<<<<<< Updated upstream
-=======
+CharacterBody3D
 MeshInstance3D
+Sprite2D
 CSGBox3D
 Camera3D
 SpringArm3D
 Node3D
-CharacterBody3D
 CollisionShape3D
 DirectionalLight3D
 Sprite2D
->>>>>>> Stashed changes
->>>>>>> Frontend
 CollisionShape2D
 StaticBody2D
 ParallaxBackground
 Camera2D
-ColorRect

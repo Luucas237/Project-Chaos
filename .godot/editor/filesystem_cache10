@@ -1,6 +1,7 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1783366754
+::res://::1783367825
 adding_custom_logic_bricks.md::TextFile::-1::1783354976::0::1::::<><><>0<>0<><>::
+character_body_3d.gd::GDScript::7369590172178668035::1783366754::0::1::::<>CharacterBody3D<><>0<>0<><>::
 CLAUDE.md::TextFile::-1::1783354976::0::1::::<><><>0<>0<><>::
 docker-compose.yml::TextFile::-1::1783354990::0::1::::<><><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1783354990::0::1::::<><><>0<>0<><>::
@@ -8,9 +9,8 @@ Generator.tscn::PackedScene::4944526113370422609::1783354976::0::1::::<><><>0<>0
 icon.png::CompressedTexture2D::7044865505283936177::1783354990::1783354990::1::::<><><>0<>0<>2148e7bf66dffbe8efa19fc8f33f4cac<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 icon.svg::CompressedTexture2D::5397390482519907160::1783354990::1783354990::1::::<><><>0<>0<>d9040442a5d1467e15a022bda7e79823<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 LICENSE.txt::TextFile::-1::1783354976::0::1::::<><><>0<>0<><>::
-node_2d.tscn::PackedScene::839755192540539238::1783366754::0::1::::<><><>0<>0<><>::uid://co0s3fbj37ywi::::res://player.tscn
+NetworkManager.gd::GDScript::2004507980775227695::1783367804::0::1::::<>Node<><>0<>0<><>::
 README.md::TextFile::-1::1783354976::0::1::::<><><>0<>0<><>::
-player.tscn::PackedScene::5808237794878460916::1783366868::0::1::::<><><>0<>0<><>::uid://dc85cq45ylw0b::::res://character_body_3d.gd
 ::res://addons/::1783354990
 ::res://addons/dynamic_2d_grass/::1783354976
 icon.png::CompressedTexture2D::2594731127674755935::1783354976::1783354976::1::::<><><>0<>0<>f5d9347460f29d799067c792886419a0<>res://.godot/imported/icon.png-84bcdf6c76c7d70477e013187f000117.ctex::
@@ -9094,7 +9094,7 @@ multiple_spawner.gd::GDScript::2361071865987384877::1783354990::0::1::::Multiple
 single_spawner.gd::GDScript::4889862449517901954::1783354990::0::1::::SingleSpawner<>Marker2D<><>0<>1<><>::
 spawner_container.gd::GDScript::2759175495195727827::1783354990::0::1::::SpawnerContainer<>Node<><>0<>0<><>::
 wave_manager.gd::GDScript::1453150051622255347::1783354990::0::1::::WaveManager<>Node<><>0<>0<><>::
-::res://backend/::1783366721
+::res://backend/::1783366868
 package-lock.json::JSON::-1::1783366868::0::1::::<><><>0<>0<><>::
 package.json::JSON::-1::1783354990::0::1::::<><><>0<>0<><>::
 player.gd::GDScript::1566354450425558985::1783354990::0::1::::<>CharacterBody2D<><>0<>0<><>::
@@ -9130,14 +9130,16 @@ leaves_02_out.tres::AtlasTexture::91882703006284253::1783354990::0::1::::<><><>0
 Soldier-Idle.png::CompressedTexture2D::296137662122651268::1783354990::1783354990::1::::<><><>0<>0<>ea9e982934d3030937737d3081b028a1<>res://.godot/imported/Soldier-Idle.png-08517d20e5d013b691be14a297cb4ec3.ctex::
 Soldier-Walk.png::CompressedTexture2D::7769383056958449467::1783354990::1783354990::1::::<><><>0<>0<>bf723dd85e58a5e55171c75bc75fb505<>res://.godot/imported/Soldier-Walk.png-0886d1cf97cd270a13f6111cabb07d67.ctex::
 soldier_frames.tres::SpriteFrames::5847169905197576594::1783354990::0::1::::<><><>0<>0<><>::uid://ehplxxyhhpr5::::res://example/textures/Soldier-Idle.png<>uid://dixsusa22mfqx::::res://example/textures/Soldier-Walk.png
-::res://frontend/::1783366721
+::res://frontend/::1783366849
 mario png.jpg::CompressedTexture2D::1779351213261035062::1783366721::1783366721::1::::<><><>0<>0<>76ab9a8cc19f1fec3b68c8d43332fcab<>res://.godot/imported/mario png.jpg-268b8dc999b221e21d3e73565ce4cd43.ctex::
 package-lock.json::JSON::-1::1783358111::0::1::::<><><>0<>0<><>::
 package.json::JSON::-1::1783358111::0::1::::<><><>0<>0<><>::
-::res://frontend/Player/::0
-character_body_3d.gd::GDScript::7369590172178668035::1783366754::0::1::::<>CharacterBody3D<><>0<>0<><>::
+::res://frontend/Player/::1783367824
+player.tscn::PackedScene::5808237794878460916::1783367091::0::1::::<><><>0<>0<><>::uid://dc85cq45ylw0b::::res://character_body_3d.gd
 ::res://frontend/src/::1783354990
 ::res://frontend/src/game/::1783354990
 ::res://frontend/src/styles/::1783354990
+::res://frontend/World/::0
+World.tscn::PackedScene::6723258667445383311::1783367825::0::1::::<><><>0<>0<><>::uid://co0s3fbj37ywi::::res://frontend/Player/player.tscn
 ::res://images/::1783354990
 preview.png::CompressedTexture2D::6705601937768556808::1783354990::1783354990::1::::<><><>0<>0<>644612c5ae57271e10eb324c7f7e64b6<>res://.godot/imported/preview.png-0547df20acec22f3d540d6bfb9711ebb.ctex::
