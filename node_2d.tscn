@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://l71v7adstx4y"]
 
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://0l6wivdhn4y1" path="res://mario png.jpg" id="1_0e48y"]
 [ext_resource type="Script" uid="uid://wk0vnckhfqbp" path="res://backend/player.gd" id="1_wtcfe"]
 
@@ -66,3 +67,26 @@ position = Vector2(533, -1040)
 visible = false
 position = Vector2(-792.75, 989)
 shape = SubResource("RectangleShape2D_epypp")
+=======
+[ext_resource type="PackedScene" uid="uid://co0s3fbj37ywi" path="res://player.tscn" id="1_wtcfe"]
+
+[node name="World" type="Node3D" unique_id=602783347]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=856340933]
+use_collision = true
+size = Vector3(30, 0.5, 30)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=458282012]
+transform = Transform3D(1, 0, 0, 0, 0.5361639, 0.84411395, 0, -0.84411395, 0.5361639, 0, 2.153666, 0)
+shadow_enabled = true
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=121209322]
+
+[node name="Player" parent="CharacterBody3D" unique_id=1570557299 instance=ExtResource("1_wtcfe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.41235852, 0)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=2032400342]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3633113, 1.8761239, 3.9486694)
+use_collision = true
+size = Vector3(1, 3.3203125, 8.897339)
+>>>>>>> Stashed changes

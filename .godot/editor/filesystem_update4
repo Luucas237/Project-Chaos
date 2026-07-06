@@ -1,0 +1,4 @@
+res://node_2d.tscn
+res://backend/package-lock.json
+res://player.tscn
+res://character_body_3d.gd
