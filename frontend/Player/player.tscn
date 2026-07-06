@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://co0s3fbj37ywi"]
 
 [ext_resource type="Script" uid="uid://dc85cq45ylw0b" path="res://character_body_3d.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://csabfo8dcdcqw" path="res://frontend/Player/collision_shape_3d.gd" id="2_mjhwn"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ibi8n"]
 
@@ -20,6 +21,7 @@ mesh = SubResource("CapsuleMesh_ibi8n")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1511705332]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8329021, 0)
 shape = SubResource("CapsuleShape3D_ibi8n")
+script = ExtResource("2_mjhwn")
 
 [node name="CameraPivot" type="Node3D" parent="CharacterBody3D" unique_id=1953017605]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.830166, 0)
