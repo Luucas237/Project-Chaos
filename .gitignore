@@ -32,3 +32,15 @@ Thumbs.db
 
 # Docker
 docker-compose.override.yml
+
+# Pliki tymczasowe i cache Godota
+.godot/
+*.uid
+
+# Logi i pliki eksportu
+*.log
+export_presets.cfg
+
+# Jeśli kolega ma swoje pliki środowiskowe w backendzie
+backend/.env
+backend/node_modules/
