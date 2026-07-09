@@ -18,9 +18,10 @@ script = ExtResource("1_4flbx")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.83747756, 0)
 mesh = SubResource("CapsuleMesh_ibi8n")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1511705332]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1511705332 groups=["player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8329021, 0)
 shape = SubResource("CapsuleShape3D_ibi8n")
+debug_color = Color(0.7921569, 0.3647059, 0.5921569, 0.9490196)
 script = ExtResource("2_mjhwn")
 
 [node name="CameraPivot" type="Node3D" parent="CharacterBody3D" unique_id=1953017605]
@@ -30,7 +31,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.830166, 0)
 transform = Transform3D(1, 0, 0, 0, 0.49999997, -0.86602545, 0, 0.86602545, 0.49999997, 0, 0, 0)
 spring_length = 6.0
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/CameraPivot/SpringArm3D" unique_id=1850655567]
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D/CameraPivot/SpringArm3D" unique_id=1850655567 groups=["player"]]
+transform = Transform3D(1, 0, 0, 0, 0.12879556, 0.9916712, 0, -0.9916712, 0.12879556, 0, 1.4318323, 0.26976025)
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="CharacterBody3D" unique_id=634543222]
 transform = Transform3D(0.011598863, -0.0017268434, -0.39982808, -0.17898348, 0.35765842, -0.0067369575, 0.35753378, 0.1791019, 0.009598386, -0.043262124, 1.8542345, 0.11260772)

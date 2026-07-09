@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bqby6cj6j47xy"]
+
+[node name="HealthBarHUD" type="Control" unique_id=1993864215]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1481158722]
+modulate = Color(1, 0, 0, 1)
+visibility_layer = 1023
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3159722
+anchor_top = 0.8626543
+anchor_right = 0.6666667
+anchor_bottom = 0.92746913
+grow_vertical = 0
+value = 50.0
+metadata/_edit_use_anchors_ = true

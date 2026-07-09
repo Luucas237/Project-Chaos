@@ -1,1 +1,5 @@
 res://frontend/World/World.tscn
+res://frontend/Player/player.tscn
+res://backend/progress_bar.gd
+res://health_bar_hud.tscn
+res://frontend/Player/collision_shape_3d.gd
