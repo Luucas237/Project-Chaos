@@ -1,5 +1,8 @@
+res://health_bar_hud.tscn
+res://backend/progress_bar.gd
 res://frontend/World/World.tscn
 res://frontend/Player/player.tscn
-res://backend/progress_bar.gd
-res://health_bar_hud.tscn
-res://frontend/Player/collision_shape_3d.gd
+res://backend/MainMenu/main_menu.gd
+res://backend/MainMenu/main_menu.tscn
+res://default_bus_layout.tres
+res://backend/MainMenu/options_menu.gd

@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://dcam8cvqai216"]
+
+[ext_resource type="Script" uid="uid://typ758hwdsem" path="res://backend/MainMenu/main_menu.gd" id="1_5jy4c"]
+[ext_resource type="Script" uid="uid://b0iidjs5743nj" path="res://backend/MainMenu/options_menu.gd" id="2_gratb"]
+
+[node name="MainMenu" type="Control" unique_id=512966715]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5jy4c")
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=517478079]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -68.0
+offset_right = 400.0
+offset_bottom = 68.0
+grow_vertical = 2
+
+[node name="ButtonSingle" type="Button" parent="VBoxContainer" unique_id=284824234]
+layout_mode = 2
+text = "Singleplayer"
+
+[node name="ButtonMulti" type="Button" parent="VBoxContainer" unique_id=307343531]
+layout_mode = 2
+text = "Multiplayer"
+
+[node name="ButtonOptions" type="Button" parent="VBoxContainer" unique_id=1150296065]
+layout_mode = 2
+text = "Options"
+
+[node name="ButtonExit" type="Button" parent="VBoxContainer" unique_id=2104321235]
+layout_mode = 2
+text = "Exit"
+
+[node name="OptionsMenu" type="Panel" parent="." unique_id=1621125733]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -102.0
+offset_top = -87.0
+offset_right = 210.0
+offset_bottom = 142.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_gratb")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="OptionsMenu" unique_id=1388086302]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Resolution" type="Label" parent="OptionsMenu/VBoxContainer" unique_id=61453198]
+layout_mode = 2
+text = "Resolution"
+
+[node name="ResolutionSelect" type="OptionButton" parent="OptionsMenu/VBoxContainer" unique_id=699572029]
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "1920x1080"
+popup/item_0/id = 0
+popup/item_1/text = "1280x720"
+popup/item_1/id = 1
+popup/item_2/text = "1024x576"
+popup/item_2/id = 2
+
+[node name="MasterVolume" type="Label" parent="OptionsMenu/VBoxContainer" unique_id=1356740855]
+layout_mode = 2
+text = "Master Volume"
+
+[node name="MasterSlider" type="HSlider" parent="OptionsMenu/VBoxContainer" unique_id=1835074270]
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="Tryb Ekranu" type="Label" parent="OptionsMenu/VBoxContainer" unique_id=1093197828]
+layout_mode = 2
+
+[node name="FullscreenCheck" type="CheckButton" parent="OptionsMenu/VBoxContainer" unique_id=1035380981]
+layout_mode = 2
+text = "Fullscreen"
+
+[node name="BackButton" type="Button" parent="OptionsMenu/VBoxContainer" unique_id=1192426421]
+layout_mode = 2
+text = "Back"
+
+[connection signal="pressed" from="VBoxContainer/ButtonSingle" to="." method="_on_button_single_pressed"]
+[connection signal="pressed" from="VBoxContainer/ButtonOptions" to="." method="_on_button_options_pressed"]

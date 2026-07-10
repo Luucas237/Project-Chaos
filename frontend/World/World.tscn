@@ -1,21 +1,15 @@
 [gd_scene format=3 uid="uid://c212c8xw0fgyp"]
 
 [ext_resource type="PackedScene" uid="uid://co0s3fbj37ywi" path="res://frontend/Player/player.tscn" id="1_c6gwx"]
-[ext_resource type="PackedScene" uid="uid://bqby6cj6j47xy" path="res://health_bar_hud.tscn" id="3_iogmr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_afu2c"]
+size = Vector3(38.86963, 1, 46.124023)
 
 [node name="Node3D" type="Node3D" unique_id=1757558098]
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=348550431]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5634899, -0.026780605, 0.06831813)
+[node name="Player" parent="." unique_id=1570557299 groups=["player"] instance=ExtResource("1_c6gwx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2362576, 0)
 
-[node name="Player" parent="CharacterBody3D" unique_id=1570557299 instance=ExtResource("1_c6gwx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4424224, 0)
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=228385568]
-layer = 5
-
-[node name="HealthBarHUD" parent="CanvasLayer" unique_id=1839363860 instance=ExtResource("3_iogmr")]
-offset_left = -1.0
-offset_top = 7.0
-offset_right = -1.0
-offset_bottom = 7.0
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=632003051]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.40863228, 0.19187737, -4.5649414)
+mesh = SubResource("BoxMesh_afu2c")
